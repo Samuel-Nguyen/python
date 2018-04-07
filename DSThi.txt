@@ -1,0 +1,4 @@
+Cau so 1: 1 2 3 
+Cau so 2: 1 2 3 
+Cau so 4: 2 3 
+Cau so 3: 6 
