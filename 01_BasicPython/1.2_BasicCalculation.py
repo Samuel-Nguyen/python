@@ -2,6 +2,9 @@
 
 
 def basicCalculate(first, second):
+    """
+    Basic calculation
+    """
     print("x = {}, y = {}".format(first, second))
     print("Addition      : x + y = {}".format(first + second))
     print("Subtraction   : x - y = {}".format(first - second))

@@ -1,11 +1,14 @@
 #!python3
 
 
-def calculatedMoney(first, second):
-    print("Amount  = {} * {} = {}".format(first, second, first * second))
+def calculatedMoney(quantity, price):
+    """
+    Calculation amount money need to pay base on quantity and price
+    """
+    print("Amount  = {} * {} = {}".format(quantity, price, quantity * price))
 
 
 if __name__ == '__main__':
-    first = int(input("Quantity: "))
-    second = int(input("Prices  : "))
-    calculatedMoney(first, second)
+    quantity = int(input("Quantity: "))
+    price = int(input("Price   : "))
+    calculatedMoney(quantity, price)
