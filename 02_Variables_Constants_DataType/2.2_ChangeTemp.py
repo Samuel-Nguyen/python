@@ -7,6 +7,9 @@ import Utils    # noqa      # comment to ignore on top import PEP8 linting
 
 # How to Convert Celcius to Farenheit
 def changeTemp(cDegrees):
+    """
+    Change degree from celcius to farenheit
+    """
     fDegrees = float(cDegrees + 32) * 9 / 5
     print("{:0.2f} Celcius  = {:0.2f} Farenheit".format(cDegrees, fDegrees))
 

@@ -2,6 +2,9 @@
 
 
 def printHello():
+    """
+    Hello world
+    """
     print('''
         **    **  ******  **      **      ******
         **    **  **      **      **      **  **
