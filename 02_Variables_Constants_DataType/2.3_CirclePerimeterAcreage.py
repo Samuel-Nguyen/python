@@ -10,7 +10,12 @@ PI = 3.14
 
 def CirclePerimeter(radius):
     return 'Perimeter p = 2 * {} * {} = {:0.2f}' \
-        .format(PI, radius, radius*PI*2)
+        .format(PI, radius, radius * PI * 2)
+
+
+def CircleAcreage(radius):
+    return 'Acreage s = {:0.2f} * {} * {} = {:0.2f}' \
+        .format(PI, radius, radius, PI * radius * radius)
 
 
 if __name__ == "__main__":
@@ -18,3 +23,4 @@ if __name__ == "__main__":
     notification = "Please input radius: "
     radius = Utils.validateIntInput(notification, radius)
     print(CirclePerimeter(radius))
+    print(CircleAcreage(radius))
