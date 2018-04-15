@@ -1,8 +1,6 @@
 #!python3
-import sys
-
-sys.path.append("D:\\Samuel\\Example\\PyTon\\Utils")
-import Utils    # noqa      # comment to ignore on top import PEP8 linting
+import imp
+Utils = imp.load_source("Utils", "./Utility/Utils.py")
 
 
 # How to Convert Celcius to Farenheit

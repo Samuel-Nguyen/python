@@ -1,9 +1,7 @@
 #!python3
-import sys
-
-sys.path.append("D:\\Samuel\\Example\\PyTon\\Utils")
-import Utils    # noqa      # comment to ignore on top import PEP8 linting
-PI = 3.14
+import imp
+Utils = imp.load_source("Utils", "./Utility/Utils.py")
+Constants = imp.load_source("Constants", "./Utility/Constants.py")
 
 
 def CirclePerimeterAcreage(radius):
@@ -12,9 +10,9 @@ def CirclePerimeterAcreage(radius):
     Return two item at once
     """
     perimeter = 'Perimeter p = 2 * {} * {} = {:0.2f}' \
-        .format(PI, radius, radius * PI * 2)
+        .format(Constants.PI, radius, radius * Constants.PI * 2)
     acreage = 'Acreage s = {:0.2f} * {} * {} = {:0.2f}' \
-        .format(PI, radius, radius, PI * radius * radius)
+        .format(Constants.PI, radius, radius, Constants.PI * radius * radius)
 
     return perimeter, acreage
 

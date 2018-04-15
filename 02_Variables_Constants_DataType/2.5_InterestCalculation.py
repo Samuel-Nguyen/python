@@ -1,8 +1,5 @@
 #!python3
-import sys
-
-sys.path.append("D:\\Samuel\\Example\\PyTon\\Utils")
-import Utils    # noqa
+import Utils.Utils as Utils
 
 
 def InterestCalculation(rate, base, month):

@@ -1,8 +1,6 @@
 #!python3
-import sys
-
-sys.path.append("D:\\Samuel\\Example\\PyTon\\Utils")
-import Utils    # noqa
+import imp
+Utils = imp.load_source("Utils", "./Utility/Utils.py")
 
 
 def StringHandling():
